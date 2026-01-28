@@ -1,0 +1,272 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', system-ui, sans-serif;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.video-pres video{
+    width: 100%;
+}
+
+.video-pres {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-pres img {
+    position: absolute;
+    height: 100%;
+    justify-self: center;
+}
+
+
+.wrap-somos {
+     background-color: #f1eec7;
+ padding: 3rem 0;
+}
+
+.quienes-somos{
+
+ 
+    display: flex;
+    width: 50%;
+margin: 0rem auto;
+}
+
+
+
+
+
+
+.horarios-img {
+display:flex;
+justify-content: center;
+gap: 3rem;
+
+}
+.horarios-img img {
+    width: 23vw;
+    border-radius: 7px;
+}
+
+
+
+
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.global-bjj-mma{
+    background-color: #f1ac6be9;
+    display: flex;
+      align-items: center; 
+    flex-direction: column;
+}
+
+
+.conteiner-bjj,
+.conteiner-mma {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+/* =========================
+   TEXTO (IZQUIERDA)
+========================= */
+.cont-texto-bjj,
+.cont-texto-mma {
+  flex: 1;
+}
+
+.cont-texto-bjj h2,
+.cont-texto-mma h2 {
+  margin-bottom: 1rem;
+}
+
+.cont-texto-bjj p,
+.cont-texto-mma p {
+  line-height: 1.6;
+}
+
+/* =========================
+   IMÁGENES (DERECHA)
+========================= */
+.cont-img-bjj,
+.cont-img-mma {
+  flex: 1;
+  max-width: 15rem;
+  position: relative;
+}
+
+.cont-img-bjj,
+.cont-img-mma {
+  position: relative;
+}
+
+/* Todas las imágenes superpuestas */
+.cont-img-bjj img,
+.cont-img-mma img {
+  position: absolute;
+  border-radius: 10px;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* más lento y smooth */
+  pointer-events: none;
+}
+
+/* Imagen activa */
+.cont-img-bjj img.active,
+.cont-img-mma img.active {
+  opacity: 1;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrap-contact {
+    margin: 3rem auto;
+width: 50%;
+  background-color: #f1ac6be9;
+}
+
+.contacto1 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 13vw;
+}
+
+.contacto1 img {
+    width: 18rem;
+}
+
+.contacto1 nav {
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+footer {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.futer1 nav {
+display: flex;
+gap: 3rem;
+justify-content: center;
+margin: 2rem;
+}
+.tomi {
+    margin: 2rem;
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 1000px) {
+
+h2{
+    font-size: 22px;
+}
+
+p {
+    font-size: 12px;
+    text-align: center;
+}
+
+  .conteiner-bjj,
+  .conteiner-mma {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cont-img-bjj,
+  .cont-img-mma {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+@media (width < 1000px) {
+
+.horarios-img {
+flex-direction: column;
+align-items: center;
+}
+.horarios-img img {
+    width: 64vw;
+}
+
+
+.video-pres {
+    height: 40vh;
+    overflow: hidden ;
+}
+
+.video-pres video {
+    height: 100%;       
+    object-fit: cover;
+}
+
+.contacto1 {
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.futer1 nav {
+display: flex;
+gap: 1rem;
+justify-content: center;
+margin: 2rem;
+}
+
+}

@@ -73,6 +73,7 @@ gap: 3rem;
 ========================= */
 
 .global-bjj-mma{
+    padding: 1rem;
     background-color: #f1ac6be9;
     display: flex;
       align-items: center; 
@@ -145,17 +146,24 @@ gap: 3rem;
 
 
 
+.wrapp-horarios {
+         padding: 3rem 0;
+         background-color: #f1eec7;
+}
 
 
 
+.contacto-wrapp {
+     padding: 3rem 0;
+    background-color: #f1ac6be9;
 
-
+}
 
 
 .wrap-contact {
-    margin: 3rem auto;
+    margin: 0rem auto;
 width: 50%;
-  background-color: #f1ac6be9;
+
 }
 
 .contacto1 {
@@ -175,9 +183,14 @@ flex-direction: column;
 
 }
 
-
+.futer2 {
+    padding: 1rem 0;
+       background-color: #f1eec7;
+           width: 100%; /
+}
 
 footer {
+    
     margin: 0 auto;
     width: 50%;
     text-align: center;
@@ -186,6 +199,7 @@ footer {
 
 
 .futer1 nav {
+
 display: flex;
 gap: 3rem;
 justify-content: center;

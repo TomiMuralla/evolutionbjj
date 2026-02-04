@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -131,7 +134,7 @@ gap: 3rem;
   position: relative;
 }
 
-/* Todas las imágenes superpuestas */
+
 .cont-img-bjj img,
 .cont-img-mma img {
   position: absolute;
@@ -140,14 +143,14 @@ gap: 3rem;
   width: 100%;
  /* height: auto;*/
   opacity: 0;
-  transition: opacity 1.5s ease-in-out; /* más lento y smooth */
+  transition: opacity 1.5s ease-in-out; 
   pointer-events: none;
     height: 100%;
   object-fit: cover;
 
 }
 
-/* Imagen activa */
+
 .cont-img-bjj img.active,
 .cont-img-mma img.active {
   opacity: 1;
@@ -193,12 +196,13 @@ flex-direction: column;
 
 .svg1 img {
   width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .svg1 a {
   display: flex;
   align-items: center;
-  margin: 0.2rem;
+  margin: 0.3rem;
 }
 
 .futer2 {

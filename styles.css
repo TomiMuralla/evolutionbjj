@@ -3,10 +3,16 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Bungee', system-ui, sans-serif;
+ background-image: url("/src/A4.jpg");
+background-repeat: repeat-y;
+background-size: contain;
+color: white;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 34px;
+    font-family: 'Black Ops One', system-ui, sans-serif;
+      letter-spacing: 0.05em;
 }
 
 .video-pres video{
@@ -27,8 +33,10 @@ h2{
 }
 
 
+/*=================================================================*/
+
 .wrap-somos {
-     background-color: #f1eec7;
+/*     background-color: #f1eec7;*/
  padding: 3rem 0;
 }
 
@@ -74,7 +82,7 @@ gap: 3rem;
 
 .global-bjj-mma{
     padding: 1rem;
-    background-color: #f1ac6be9;
+ /*  background-color: #f1ac6be9;*/
     display: flex;
       align-items: center; 
     flex-direction: column;
@@ -130,10 +138,13 @@ gap: 3rem;
   border-radius: 10px;
   inset: 0;
   width: 100%;
-  height: auto;
+ /* height: auto;*/
   opacity: 0;
   transition: opacity 1.5s ease-in-out; /* más lento y smooth */
   pointer-events: none;
+    height: 100%;
+  object-fit: cover;
+
 }
 
 /* Imagen activa */
@@ -148,26 +159,23 @@ gap: 3rem;
 
 .wrapp-horarios {
          padding: 3rem 0;
-         background-color: #f1eec7;
+    /*     background-color: #f1eec7;*/
 }
 
-
+.par-hor {
+  margin: 2rem auto;
+width: 50%;
+}
 
 .contacto-wrapp {
      padding: 3rem 0;
-    background-color: #f1ac6be9;
-
-}
-
-
-.wrap-contact {
-    margin: 0rem auto;
-width: 50%;
+ /*   background-color: #f1ac6be9;*/
 
 }
 
 .contacto1 {
     margin: 0 auto;
+    width: 50%;
     display: flex;
     justify-content: center;
     gap: 13vw;
@@ -183,9 +191,19 @@ flex-direction: column;
 
 }
 
+.svg1 img {
+  width: 2rem;
+}
+
+.svg1 a {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem;
+}
+
 .futer2 {
     padding: 1rem 0;
-       background-color: #f1eec7;
+    /*   background-color: #f1eec7;*/
            width: 100%; /
 }
 
@@ -201,6 +219,7 @@ footer {
 .futer1 nav {
 
 display: flex;
+flex-wrap: wrap;
 gap: 3rem;
 justify-content: center;
 margin: 2rem;
@@ -220,14 +239,26 @@ a {
 /* =========================
    RESPONSIVE
 ========================= */
-@media (max-width: 1000px) {
+
+@media (width < 1000px) {
+  body {
+ background-image: url("/src/CELU3.jpg");
+  }
+.conteiner-bjj,
+.conteiner-mma, .quienes-somos {
+width: 90%
+}
+
+.par-hor {
+  width: 90%;
+}
 
 h2{
     font-size: 22px;
 }
 
 p {
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
 }
 
@@ -241,15 +272,6 @@ p {
   .cont-img-mma {
     max-width: 100%;
   }
-}
-
-
-
-
-
-
-@media (width < 1000px) {
-
 .horarios-img {
 flex-direction: column;
 align-items: center;

@@ -181,11 +181,12 @@ width: 50%;
     width: 50%;
     display: flex;
     justify-content: center;
-    gap: 13vw;
+    gap: 10vw;
 }
 
 .contacto1 img {
     width: 18rem;
+    border-radius: 6px;
 }
 
 .contacto1 nav {
